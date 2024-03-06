@@ -8,7 +8,7 @@ type AwnserQuestionProps = {
 
 export class AwnserQuestion {
   do({ instructorId, questionId, content }: AwnserQuestionProps) {
-    const awnser = new Awnser(content)
+    const awnser = new Awnser(content, instructorId, questionId)
 
     return awnser
   }
